@@ -1,7 +1,7 @@
 import './estilo.css'
 import logo from '../../imagens/logo.svg';
 
-function Logo(){
+function LogoHeader(){
     return (
     <div className='logo'>
           <img src={logo} 
@@ -13,4 +13,4 @@ function Logo(){
     );
 }
 
-export default Logo;
+export default LogoHeader;
