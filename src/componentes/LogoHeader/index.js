@@ -1,15 +1,23 @@
-import './estilo.css'
 import logo from '../../imagens/logo.svg';
+import styled from 'styled-components';
 
-function LogoHeader(){
+const LogoHeaderContainer = styled.div`
+    display: flex;
+    font-size: 30px;
+`
+const LogoImg = styled.img`
+    margin-right: 10px;
+`
+
+function LogoHeader() {
     return (
-    <div className='logo'>
-          <img src={logo} 
-          alt='logo' 
-          className='logo-img'
-          ></img>
-          <p><strong>Buiatti</strong>Books</p>
-        </div>
+        <LogoHeaderContainer>
+            <LogoImg src={logo}
+                alt='logo'
+                className='logo-img'
+            ></LogoImg>
+            <p><strong>Buiatti</strong>Books</p>
+        </LogoHeaderContainer>
     );
 }
 
